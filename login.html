@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="overlay" id="loginOverlay">
+  <div class="login-modal">
+    <button class="close-btn" onclick="closeModal()">✕</button>
+    <h2>Login</h2>
+
+    <div class="phone-input">
+      <select>
+        <option>+91</option>
+        <option>+1</option>
+        <option>+44</option>
+      </select>
+      <input type="text" placeholder="Phone">
+    </div>
+
+    <button class="otp-btn">Send One Time Password</button>
+
+    <div class="divider"><span>or</span></div>
+
+    <button class="social-btn email">
+      <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="Email">
+      Continue with Email
+    </button>
+
+    <button class="social-btn google">
+      <img src="google.png" alt="Google">
+      Sign in with Google
+    </button>
+
+    <p class="signup-text">
+      New to FeastFlow? <a href="#">Create account</a>
+    </p>
+  </div>
+</div>
+
+<script>
+  function closeModal() {
+    document.getElementById("loginOverlay").style.display = "none";
+  }
+</script>
+
+</body>
+</html>

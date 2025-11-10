@@ -1,22 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MY CAPSTONE PROJECT /OrderFoodOnline.com </title>
-    <link rel="stylesheet" href="LOOKS.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FeastFlow</title>
+  <link rel="stylesheet" href="LOOKS.css">
 </head>
 <body>
-    <nav id="navbar">
-        <div id="logo">
-            <img src="logo.jpeg" alt="OrderFoodOnline.com" style="border-radius: 150px; ">
-        </div>
+
+  <nav class="navbar">
+    <div class="nav-left">
+      <div class="logo">FeastFlow</div>
+      <div class="search-bar">
+        <input type="text" placeholder="📍 Ywca, Ashoka Rd, Hanum...">
+        <span class="divider">|</span>
+        <input type="text" class="search-input" placeholder="🔍 Search for restaurant, cuisine or a dish">
+      </div>
+    </div>
+
+    <div class="nav-right">
+      <a href="login.html">Log in</a>
+      <a href="#">Sign up</a>
+    </div>
+  </nav>
+
+  <div class="category-bar">
+    <div class="category active">
+      <a href="#">
+      <img src="https://cdn-icons-png.flaticon.com/512/857/857681.png" alt="Dining Out">
+      </a>
+      <span>Dining Out</span>
+    </div>
+    <div class="category">
+      <a href="dilivery.html">
+      <img src="https://cdn-icons-png.flaticon.com/512/891/891462.png" alt="Delivery">
+      </a>
+      <span>Delivery</span>
+    </div>
+    <div class="category">
+      <img src="night.jpg" alt="Nightlife">
+      <span>Nightlife</span>
+    </div>
+  </div>
+  <!-- Filter Buttons -->
+<div class="filters">
+  <button><i class="fa-solid fa-sliders"></i> Filters</button>
+  <button>Offers</button>
+  <button>Rating: 4.5+</button>
+  <button>Pet friendly</button>
+  <button>Outdoor seating</button>
+  <button>Serves Alcohol</button>
+  <button>Open Now</button>
+</div>
+
+<!-- Offer Banner -->
+<div class="offer-banner">
+  <div class="offer-text">
+    <h3>Get up to</h3>
+    <h1>50% OFF</h1>
+    <p>on your dining bills with FeastFlow</p>
+    <button>Check out all the restaurants</button>
+  </div>
+  <div class="offer-image">
+  <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=1200&q=80" alt="Delicious food">
+  </div>
+</div>
+
+<!-- FeastFlow App Download Section -->
+<section class="app-banner">
+  <div class="app-left">
+    <div class="app-brand">
+      <img src="https://cdn-icons-png.flaticon.com/512/857/857681.png" alt="FeastFlow logo">
+      <span>FeastFlow</span>
+    </div>
+    <h1>Get the FeastFlow App now!</h1>
+    <p>For best offers and discounts curated specially for you.</p>
+  </div>
+
+  <div class="app-right">
+    <div class="phone-body">
+      <div class="phone-notch"></div>
+      <div class="phone-screen">
+        <img src="qr.png" alt="QR Code">
+        <p>Scan to download</p>
+      </div>
+    </div>
+
+    <!-- Floating food icons -->
+    <img src="https://cdn-icons-png.flaticon.com/512/1046/1046784.png" class="food food1" alt="Burger">
+    <img src="https://cdn-icons-png.flaticon.com/512/1046/1046786.png" class="food food2" alt="Sushi">
+    <img src="https://cdn-icons-png.flaticon.com/512/1046/1046787.png" class="food food3" alt="Dish">
+    <img src="https://cdn-icons-png.flaticon.com/512/1046/1046788.png" class="food food4" alt="Salad">
+  </div>
+</section>
+<!-- footer section -->
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <img src="https://cdn-icons-png.flaticon.com/512/857/857681.png" alt="FeastFlow Logo">
+      <h2>FeastFlow</h2>
+      <p>© 2025 FeastFlow Limited</p>
+    </div>
+
+    <div class="footer-columns">
+      <div class="footer-col">
+        <h4>Company</h4>
         <ul>
-            <li class="item"><a href="#">Home</a></li>
-            <li class="item"><a href="#">Services</a></li>
-            <li class="item"><a href="#">About us</a></li>
-            <li class="item"><a href="#">Contact Us</a></li>
+          <li>About Us</li>
+          <li>FeastFlow Corporate</li>
+          <li>Careers</li>
+          <li>Team</li>
+          <li>FeastFlow One</li>
+          <li>FeastMart</li>
+          <li>Dineout</li>
         </ul>
-    </nav>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <ul>
+          <li>Help & Support</li>
+          <li>Partner With Us</li>
+          <li>Ride With Us</li>
+        </ul>
+        <h4>Legal</h4>
+        <ul>
+          <li>Terms & Conditions</li>
+          <li>Cookie Policy</li>
+          <li>Privacy Policy</li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Available In</h4>
+        <ul>
+          <li>Bangalore</li>
+          <li>Gurgaon</li>
+          <li>Hyderabad</li>
+          <li>Delhi</li>
+          <li>Mumbai</li>
+          <li>Pune</li>
+        </ul>
+        <select>
+          <option>685 cities</option>
+        </select>
+      </div>
+
+      <div class="footer-col">
+        <h4>Life at FeastFlow</h4>
+        <ul>
+          <li>Explore With FeastFlow</li>
+          <li>FeastFlow News</li>
+          <li>Snackables</li>
+        </ul>
+        <h4>Social Links</h4>
+        <div class="social-links">
+          <i class="fab fa-linkedin"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-pinterest"></i>
+          <i class="fab fa-twitter"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <hr>
+    <p>For better experience, download the FeastFlow app now</p>
+    <div class="store-buttons">
+      <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play">
+    </div>
+  </div>
+</footer>
+
+<!-- Font Awesome (for icons) -->
+<script src="https://kit.fontawesome.com/a2e0e6e6c2.js" crossorigin="anonymous"></script>
+
+
+
+
 </body>
 </html>

@@ -1,3 +1,536 @@
-#navbar{
-    background-color: aqua;
+/* this is the code for navigation */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #fff;
 }
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 60px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #E23744; /* brand red */
+  letter-spacing: 0.5px;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 8px 12px;
+  width: 500px;
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  font-size: 14px;
+  flex: 1;
+}
+
+.divider {
+  color: #ccc;
+  margin: 0 10px;
+}
+
+.nav-right a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  margin-left: 20px;
+  transition: color 0.2s;
+}
+
+.nav-right a:hover {
+  color: #E23744;
+}
+
+.category-bar {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  margin-top: 20px;
+  border-bottom: 1px solid #f2f2f2;
+  padding-bottom: 10px;
+}
+
+.category {
+  text-align: center;
+  color: #555;
+  cursor: pointer;
+}
+
+.category img {
+  width: 40px;
+  height: 40px;
+  display: block;
+  margin: 0 auto 5px;
+}
+
+.category.active span {
+  color: #E23744;
+  font-weight: bold;
+}
+
+.category.active {
+  border-bottom: 2px solid #E23744;
+  padding-bottom: 8px;
+}
+/* code for navigation bar ends here */
+
+/* Filters Section */
+.filters {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 40px 0 30px 0;
+}
+
+.filters button {
+  border: 1px solid #ccc;
+  background: #fff;
+  color: #555;
+  border-radius: 8px;
+  padding: 10px 18px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filters button:hover {
+  border-color: #E23744;
+  color: #E23744;
+}
+
+/* Offer Banner Section */
+.offer-banner {
+  display: flex;
+  align-items: stretch; 
+  justify-content: space-between;
+  background: #000;
+  color: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  width: 80%;
+  margin: 0 auto;
+  min-height: 320px; 
+}
+
+.offer-text {
+  padding: 50px;
+  flex: 1;
+}
+
+.offer-text h3 {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.offer-text h1 {
+  font-size: 60px;
+  margin: 5px 0;
+}
+
+.offer-text p {
+  font-size: 16px;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+.offer-text button {
+  background: #E23744;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+.offer-text button:hover {
+  background: #c82333;
+}
+
+.offer-image {
+  flex: 1.5;
+  width: 100%;
+}
+
+.offer-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* offer section ends here */
+
+
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.food-section {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.food-section h2 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  color: #111;
+  opacity: 0;
+  animation: fadeInDown 1s ease forwards;
+}
+
+.food-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 40px;
+  justify-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.food-item {
+  text-align: center;
+  transform: scale(0.9) translateY(40px);
+  opacity: 0;
+  animation: popIn 0.8s ease forwards;
+}
+
+.food-item:nth-child(odd) {
+  animation-delay: 0.2s;
+}
+
+.food-item:nth-child(even) {
+  animation-delay: 0.4s;
+}
+
+.food-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  background: #ffffff;
+  padding: 10px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.food-item p {
+  margin-top: 12px;
+  font-size: 16px;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+/* Hover animations
+.food-item:hover img {
+  transform: scale(1.15) rotate(3deg);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.food-item:hover p {
+  color: #f11b03;
+} */
+
+/* Keyframes
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+} */
+/* 
+@keyframes popIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8) translateY(50px);
+  }
+  80% {
+    opacity: 1;
+    transform: scale(1.05) translateY(0);
+  }
+  100% {
+    transform: scale(1) translateY(0);
+  }
+} */
+
+/* best products ends here  */
+
+.app-banner {
+  background-color: #659634a9;
+  color: #b54848;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left:10%;
+  padding-right: 10%;
+  position: relative;
+  overflow: hidden;
+  margin: 100px 0px;
+}
+
+.app-left {
+  flex: 1;
+}
+
+.app-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.app-brand img {
+  width: 28px;
+  height: 28px;
+}
+
+.app-brand span {
+  color: #cb6520;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.app-left h1 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.app-left p {
+  font-size: 16px;
+  color: #b54848;
+}
+
+/* Phone mockup */
+.app-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.phone-body {
+  background-color: #000;
+  width: 260px;
+  height: 460px;
+  border-radius: 40px;
+  position: relative;
+  border: 8px solid #333;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+  overflow: hidden;
+  margin: 100px;
+}
+
+.phone-notch {
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 20px;
+  background-color: #111;
+  border-radius: 10px;
+  z-index: 5;
+}
+
+.phone-screen {
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  border-radius: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 40px;
+}
+
+.phone-screen img {
+  width: 180px;
+  height: 180px;
+}
+
+.phone-screen p {
+  margin-top: 25px;
+  color: #ff6600;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+/* Floating food icons */
+.food {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+}
+
+.food1 { top: 30px; left: 20px; transform: rotate(-10deg); }
+.food2 { top: 60px; right: 10px; transform: rotate(15deg); }
+.food3 { bottom: 50px; left: 0; transform: rotate(-5deg); }
+.food4 { bottom: 20px; right: 30px; transform: rotate(10deg); }
+
+/* the code for app download end here */
+
+footer {
+  background-color: #ffffff;
+  padding: 60px 10% 0 10%;  /* removed bottom padding */
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.footer-brand {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-brand img {
+  width: 45px;
+}
+
+.footer-brand h2 {
+  color: #ff6600;
+  font-size: 22px;
+  margin-top: 5px;
+}
+
+.footer-brand p {
+  color: #464545;
+  margin-top: 10px;
+}
+
+.footer-columns {
+  display: flex;
+  flex: 3;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-col {
+  min-width: 180px;
+}
+
+.footer-col h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.footer-col ul li {
+  margin-bottom: 8px;
+  color: #666;
+  cursor: pointer;
+}
+
+.footer-col ul li:hover {
+  text-decoration: underline;
+}
+
+.footer-col select {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 6px;
+  background-color: #fff;
+  color: #555;
+}
+
+.social-links {
+  display: flex;
+  gap: 12px;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.social-links i {
+  color: #333;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.social-links i:hover {
+  color: #ff6600;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.footer-bottom hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 0;
+}
+
+.footer-bottom p {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.store-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.store-buttons img {
+  width: 160px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.store-buttons img:hover {
+  transform: scale(1.05);
+}
+
