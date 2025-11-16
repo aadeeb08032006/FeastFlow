@@ -50,6 +50,9 @@ body {
 
 .nav-right a {
   text-decoration: none;
+  border: 1px solid rgba(107, 66, 66, 0.832);
+  border-radius: 10px;
+  padding: 5px;
   color: #555;
   font-weight: 500;
   margin-left: 20px;
@@ -186,8 +189,6 @@ body {
 /* offer section ends here */
 
 
-
-
 body {
   font-family: 'Poppins', sans-serif;
   background-color: #ffffff;
@@ -253,43 +254,6 @@ body {
   transition: color 0.3s ease;
 }
 
-/* Hover animations
-.food-item:hover img {
-  transform: scale(1.15) rotate(3deg);
-  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-}
-
-.food-item:hover p {
-  color: #f11b03;
-} */
-
-/* Keyframes
-@keyframes fadeInDown {
-  from {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-} */
-/* 
-@keyframes popIn {
-  0% {
-    opacity: 0;
-    transform: scale(0.8) translateY(50px);
-  }
-  80% {
-    opacity: 1;
-    transform: scale(1.05) translateY(0);
-  }
-  100% {
-    transform: scale(1) translateY(0);
-  }
-} */
-
-/* best products ends here  */
 
 .app-banner {
   background-color: #659634a9;
@@ -535,3 +499,184 @@ footer {
   transform: scale(1.05);
 }
 
+
+
+/* Tablets (max width 1024px) */
+@media (max-width: 1024px) {
+
+  .navbar {
+    padding: 15px 30px;
+  }
+
+  .search-bar {
+    width: 350px;
+  }
+
+  .offer-banner {
+    width: 90%;
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+  }
+
+  .offer-text {
+    padding: 30px;
+  }
+
+  .app-banner {
+    flex-direction: column;
+    padding: 40px 5%;
+    text-align: center;
+  }
+
+  .app-right {
+    margin-top: 30px;
+  }
+
+  .phone-body {
+    margin: 30px auto;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer-columns {
+    justify-content: space-around;
+  }
+}
+
+/* Mobile (max width 768px) */
+@media (max-width: 768px) {
+
+  /* Navbar */
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px 20px;
+  }
+
+  .nav-left {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .search-bar {
+    width: 100%;
+  }
+
+  .nav-right {
+    display: flex;
+    gap: 20px;
+  }
+
+  /* Category Bar */
+  .category-bar {
+    gap: 40px;
+  }
+
+  /* Filters */
+  .filters {
+    gap: 10px;
+  }
+
+  .filters button {
+    font-size: 13px;
+    padding: 8px 12px;
+  }
+
+  /* Offer Banner */
+  .offer-text h1 {
+    font-size: 38px;
+  }
+
+  .offer-text h3 {
+    font-size: 16px;
+  }
+
+  .offer-banner {
+    width: 95%;
+  }
+
+  /* App banner */
+  .app-left h1 {
+    font-size: 32px;
+  }
+
+  .phone-body {
+    width: 220px;
+    height: 380px;
+  }
+
+  .food {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+/* Small Mobile (max width 480px) */
+@media (max-width: 480px) {
+
+  /* Navbar */
+  .logo {
+    font-size: 22px;
+  }
+
+  .search-bar {
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+  }
+
+  .divider {
+    display: none;
+  }
+
+  /* Categories */
+  .category-bar {
+    gap: 20px;
+  }
+
+  .category img {
+    width: 32px;
+    height: 32px;
+  }
+
+  /* Filters */
+  .filters button {
+    padding: 6px 10px;
+    font-size: 11px;
+  }
+
+  /* Offer Banner */
+  .offer-text h1 {
+    font-size: 32px;
+  }
+
+  .offer-text button {
+    padding: 10px 15px;
+    font-size: 13px;
+  }
+
+  /* App Banner */
+  .app-left h1 {
+    font-size: 26px;
+  }
+
+  .phone-body {
+    width: 200px;
+    height: 350px;
+  }
+
+  /* Footer */
+  .footer-columns {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .store-buttons img {
+    width: 130px;
+  }
+}
