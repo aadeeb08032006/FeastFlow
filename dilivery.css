@@ -49,6 +49,9 @@ body {
 
 .nav-right a {
   text-decoration: none;
+  border: 1px solid rgba(107, 66, 66, 0.832);
+  border-radius: 10px;
+  padding: 5px;
   color: #555;
   font-weight: 500;
   margin-left: 20px;
@@ -223,3 +226,283 @@ body {
 }
 
 
+
+#main-footer {
+    width: 100%;
+    padding: 40px 0;
+    background-color: #8080806c;
+    font-family: Arial, sans-serif;
+}
+
+#footer-top {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+h1{
+  color: #E23744;
+}
+
+/* Links Section */
+.footer-links {
+    display: flex;
+    gap: 70px;
+    flex-wrap: wrap;
+}
+
+.footer-box p {
+    margin: 6px 0;
+    color: #333;
+    font-size: 14px;
+}
+
+.footer-title {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+/* Bottom Line */
+#footer-bottom-text {
+    width: 80%;
+    margin: 20px auto 0;
+    text-align: left;
+    font-size: 13px;
+    color: #343434e8;
+    line-height: 1.6;
+}
+
+/* Line */
+hr {
+    width: 80%;
+    margin: 30px auto;
+    border: none;
+    border-top: 1px solid #e0e0e0;
+}
+
+/* Tablets (max width 1024px) */
+@media (max-width: 1024px) {
+
+  .navbar {
+    padding: 15px 30px;
+  }
+
+  .search-bar {
+    width: 350px;
+  }
+
+  .offer-banner {
+    width: 90%;
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+  }
+
+  .offer-text {
+    padding: 30px;
+  }
+
+  .app-banner {
+    flex-direction: column;
+    padding: 40px 5%;
+    text-align: center;
+  }
+
+  .app-right {
+    margin-top: 30px;
+  }
+
+  .phone-body {
+    margin: 30px auto;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer-columns {
+    justify-content: space-around;
+  }
+}
+
+/* Mobile (max width 768px) */
+@media (max-width: 768px) {
+
+  /* Navbar */
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px 20px;
+  }
+
+  .nav-left {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .search-bar {
+    width: 100%;
+  }
+
+  .nav-right {
+    display: flex;
+    gap: 20px;
+  }
+
+  /* Category Bar */
+  .category-bar {
+    gap: 40px;
+  }
+
+  /* Filters */
+  .filters {
+    gap: 10px;
+  }
+
+  .filters button {
+    font-size: 13px;
+    padding: 8px 12px;
+  }
+
+  /* Offer Banner */
+  .offer-text h1 {
+    font-size: 38px;
+  }
+
+  .offer-text h3 {
+    font-size: 16px;
+  }
+
+  .offer-banner {
+    width: 95%;
+  }
+
+  /* App banner */
+  .app-left h1 {
+    font-size: 32px;
+  }
+
+  .phone-body {
+    width: 220px;
+    height: 380px;
+  }
+
+  .food {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+/* Small Mobile (max width 480px) */
+@media (max-width: 480px) {
+
+  /* Navbar */
+  .logo {
+    font-size: 22px;
+  }
+
+  .search-bar {
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+  }
+
+  .divider {
+    display: none;
+  }
+
+  /* Categories */
+  .category-bar {
+    gap: 20px;
+  }
+
+  .category img {
+    width: 32px;
+    height: 32px;
+  }
+
+  /* Filters */
+  .filters button {
+    padding: 6px 10px;
+    font-size: 11px;
+  }
+
+  /* Offer Banner */
+  .offer-text h1 {
+    font-size: 32px;
+  }
+
+  .offer-text button {
+    padding: 10px 15px;
+    font-size: 13px;
+  }
+
+  /* App Banner */
+  .app-left h1 {
+    font-size: 26px;
+  }
+
+  .phone-body {
+    width: 200px;
+    height: 350px;
+  }
+
+  /* Footer */
+  .footer-columns {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .store-buttons img {
+    width: 130px;
+  }
+}
+@media (max-width: 1000px) {
+    .food-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 650px) {
+    .food-grid {
+        grid-template-columns: 1fr;
+    }
+
+    #food-section {
+        width: 90%;
+    }
+}
+
+@media (max-width: 900px) {
+    #footer-top {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .footer-links {
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+}
+
+@media (max-width: 600px) {
+    #main-footer {
+        padding: 30px 0;
+    }
+
+    #footer-top {
+        width: 90%;
+    }
+
+    #footer-bottom-text,
+    hr {
+        width: 90%;
+    }
+}
