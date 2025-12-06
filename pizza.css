@@ -367,10 +367,6 @@ body {
     font-weight: bold;
 }
 
-/* ============================================
-   RESPONSIVE MEDIA QUERIES
-   ============================================ */
-
 /* Tablets and smaller laptops (max-width: 1024px) */
 @media (max-width: 1024px) {
     .navbar {
